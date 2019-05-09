@@ -80,6 +80,8 @@ $banner = "\033[0;31m
 ";
 
 echo $banner;
+echo 'Masukkan Password Qriket anda: '; 
+$password = trim(fgets(STDIN));
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, "https://goldcloudbluesky.com/app/login");
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
